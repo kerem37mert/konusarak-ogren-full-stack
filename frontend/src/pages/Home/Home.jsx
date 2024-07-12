@@ -11,7 +11,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [limit, setLimit] = useState(5);
 
-  const totalEpisodes = data?.results || [];
+  const totalEpisodes = data.results || [];
   const totalPages = Math.ceil(totalEpisodes.length / limit);
   const startIndex = (currentPage - 1) * limit;
   const currentEpisodes = totalEpisodes.slice(startIndex, startIndex + limit);

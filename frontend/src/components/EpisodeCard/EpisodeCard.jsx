@@ -11,7 +11,7 @@ const EpisodeCard = ({ data }) => {
       <h2>Name: {data.name}</h2>
       <p>{data.air_date}</p>
       <p>{data.episode}</p>
-      <Link to={`episode/${data.id}`}>Git</Link>
+      <Link to={`/episode/${data.id}`}>Git</Link>
     </div>
   );
 }

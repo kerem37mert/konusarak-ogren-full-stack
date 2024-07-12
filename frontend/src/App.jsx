@@ -4,13 +4,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Pages 
 import Home from "./pages/Home";
+import Episode from "./pages/Episode";
 
 const App = () => {
   return(
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/episode/:id" element={<div>episode</div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/episode/:id" element={<Episode />} />
       </Routes>
     </BrowserRouter>
   );
