@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Styles
+import "./Pagination.style.css";
+
 const Pagination = ({ currentPage, totalPages, onNextPage, onPrevPage }) => {
   return (
     <div className="pagination">
