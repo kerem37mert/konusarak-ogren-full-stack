@@ -1,0 +1,10 @@
+.char-card {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.char-card .name {
+    font-weight: bold;
+}

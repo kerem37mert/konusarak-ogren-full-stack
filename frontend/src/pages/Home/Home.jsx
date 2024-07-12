@@ -37,16 +37,16 @@ const Home = () => {
         <div>
           <div className="home-header">
             Görüntülenen Bölüm: 
-            <input type="number" value={limit} onChange={handleLimit} />
+            <input type="number" value={ limit } onChange={ handleLimit } />
           </div>
           {currentEpisodes.map((episode) => (
-            <EpisodeCard key={episode.id} data={episode} />
+            <EpisodeCard key={ episode.id } data={ episode } />
           ))}
           <Pagination 
-            currentPage={currentPage} 
-            totalPages={totalPages} 
-            onNextPage={handleNextPage} 
-            onPrevPage={handlePrevPage}
+            currentPage={ currentPage } 
+            totalPages={ totalPages } 
+            onNextPage={ handleNextPage } 
+            onPrevPage={ handlePrevPage }
           />
         </div>
       )}
