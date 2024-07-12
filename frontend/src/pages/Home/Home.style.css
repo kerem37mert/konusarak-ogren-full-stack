@@ -3,3 +3,14 @@
     justify-content: center;
     padding: 50px 0;
 }
+
+.home-header {
+    margin-bottom: 10px;
+}
+
+.home-header input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 25px;
+}

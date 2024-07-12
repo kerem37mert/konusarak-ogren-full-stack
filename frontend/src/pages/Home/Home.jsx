@@ -18,11 +18,16 @@ const Home = () => {
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
-  };
+  }
 
   const handlePrevPage = () => {
     setCurrentPage((prevPage) => prevPage - 1);
-  };
+  }
+
+  const handleLimit = ({target}) => {
+    setLimit(parseInt(target.value));
+    console.log(target)
+  } 
 
   return (
     <div className="home">
@@ -30,6 +35,10 @@ const Home = () => {
         <div>Yükleniyor</div>
       ) : (
         <div>
+          <div className="home-header">
+            Görüntülenen Bölüm: 
+            <input type="number" value={limit} onChange={handleLimit} />
+          </div>
           {currentEpisodes.map((episode) => (
             <EpisodeCard key={episode.id} data={episode} />
           ))}
