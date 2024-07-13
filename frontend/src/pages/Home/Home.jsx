@@ -36,7 +36,8 @@ const Home = () => {
       ) : (
         <div>
           <div className="home-header">
-            Görüntülenen Bölüm: 
+            <h1>Bölümler</h1>
+            Sayfada Görüntülenen Bölüm: 
             <input type="number" value={ limit } onChange={ handleLimit } />
           </div>
           {currentEpisodes.map((episode) => (
