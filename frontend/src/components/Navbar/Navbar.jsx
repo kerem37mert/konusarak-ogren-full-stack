@@ -8,7 +8,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Link className="title" to="/">Konuşarak Öğren Full Stack Proje</Link>
-      <Link className="link" to="/favs">Favori Karakterler</Link>
+      <div>
+        <Link className="link" to="/favs">Favori Karakterler</Link>
+        <Link className="link" to="/search">Karakter Ara</Link>
+      </div>
     </div>
   );
 }

@@ -9,9 +9,9 @@ const EpisodeCard = ({ data }) => {
     <div className="episode-card">
       <p>ID: {data.id}</p>
       <h2>Name: {data.name}</h2>
-      <p>{data.air_date}</p>
-      <p>{data.episode}</p>
-      <Link to={`/episode/${data.id}`}>Git</Link>
+      <p>Air Date: {data.air_date}</p>
+      <p>Episode: {data.episode}</p>
+      <Link className="episode-link" to={`/episode/${data.id}`}>Git</Link>
     </div>
   );
 }
