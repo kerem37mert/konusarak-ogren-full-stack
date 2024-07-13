@@ -8,3 +8,12 @@
 .char-card .name {
     font-weight: bold;
 }
+
+.fav-icon {
+    cursor: pointer;
+    color: red;
+}
+
+.fav-border-icon {
+    cursor: pointer;
+}

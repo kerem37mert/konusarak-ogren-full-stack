@@ -5,15 +5,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Pages 
 import Home from "./pages/Home";
 import Episode from "./pages/Episode";
+import { FavProvider } from "./contexts/FavContext";
 
 const App = () => {
   return(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/episode/:id" element={<Episode />} />
-      </Routes>
-    </BrowserRouter>
+    <FavProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/episode/:id" element={<Episode />} />
+        </Routes>
+      </BrowserRouter>
+    </FavProvider>
   );
 }
 
