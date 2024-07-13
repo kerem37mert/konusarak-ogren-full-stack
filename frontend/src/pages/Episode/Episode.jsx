@@ -37,9 +37,9 @@ const Episode = () => {
             ) : (
                 <div>
                     <h2>Bölüm: { id } - Karakterler: { totalChars.length }</h2>
-                    {currentChars.map((char, index) => (
-                        <CharCard key={index} url={char} />
-                    ))}
+                    { currentChars.map((char, index) => (
+                        <CharCard key={ index } url={ char } />
+                    )) }
                     <Pagination 
                         currentPage={ currentPage } 
                         totalPages={ totalPages } 
