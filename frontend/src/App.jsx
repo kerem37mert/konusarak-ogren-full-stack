@@ -7,10 +7,14 @@ import Home from "./pages/Home";
 import Episode from "./pages/Episode";
 import { FavProvider } from "./contexts/FavContext";
 
+//Components
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return(
     <FavProvider>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/episode/:id" element={<Episode />} />

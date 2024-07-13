@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 20px 10%;
+}
+
+.navbar .title {
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .link {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.navbar .link:hover {
+    text-decoration: underline;
+}
