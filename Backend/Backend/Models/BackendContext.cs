@@ -7,5 +7,6 @@ namespace Backend.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Episode> Episodes { get; set; }
+        public DbSet<Chars> Chars { get; set; }
     }
 }
